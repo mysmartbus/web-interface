@@ -1,0 +1,552 @@
+/* Generic/Miscellaneous */
+.centered {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.page_title_div, .page_title_cell {
+    text-align: center;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+.noborder {
+    border: 0px !important;
+}
+
+.clearboth {
+    clear: both;
+}
+
+/* AddEditContact */
+/* Generic */
+.ae_id_type_encompassing_div {
+    width: 425px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ae_id_type_encompassing_div .fieldpair_div {
+    float: left;
+    margin-right: 30px;
+}
+
+.ae_id_type_encompassing_div .fieldpair_div span:first-child {
+    margin-right: 15px;
+}
+
+.ae_id_type_encompassing_div .fieldpair_div span:nth-child(2) {
+    border: 1px solid #123abc;
+    min-width: 50px;
+    padding-right: 3px;
+    padding-left: 3px;
+    display: inline-block;
+}
+
+.ae_id_type_encompassing_div div:last-child {
+    margin-right: 0px;
+}
+
+.ae_name_table_div {
+    clear: both;
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.ae_mailing_address_div {
+    float: left;
+    margin-bottom: 10px;
+}
+
+.ae_mailing_address_div .fieldpair_div {
+    clear: both;
+    float: left;
+    min-width: 175px;
+}
+
+.ae_mailing_address_div .fieldname_span {
+    float: left;
+    margin-right: 8px;
+    min-width: 128px;
+}
+
+.ae_mailing_address_div .fieldvalue_span {
+    float: left;
+    padding-left: 5px;
+    min-width: 100px;
+}
+
+.ae_phone_numbers_div {
+    float: right;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.ae_phone_numbers_div .fieldpair_div {
+    clear: both;
+    float: left;
+    min-width: 175px;
+}
+
+.ae_phone_numbers_div .fieldname_span {
+    float: left;
+    margin-right: 10px;
+    min-width: 110px;
+}
+
+.ae_phone_numbers_div .fieldvalue_span {
+    float: left;
+    padding-left: 5px;
+    min-width: 100px;
+}
+
+.ae_lastmeeting_div {
+    clear: both;
+    float: left;
+    margin-top: 10px;
+}
+
+.ae_lastmeeting_div span {
+    float: left;
+}
+
+.ae_lastmeeting_div span:first-child {
+    width: 150px;
+}
+
+.ae_notes_div {
+    clear: both;
+    float: left;
+    margin-top: 2px;
+}
+
+.ae_notes_div span {
+    vertical-align: top;
+}
+
+.ae_notes_div span:first-child {
+    float: left;
+    width: 75px;
+}
+
+.ae_website_div {
+    clear: both;
+    margin-bottom: 10px;
+}
+
+.ae_website_div span:first-child {
+    float: left;
+    margin-right: 10px;
+}
+
+.ae_email_div {
+    float: left;
+    margin-right: 20px;
+}
+
+.ae_email_div span:first-child {
+    float: left;
+    margin-right: 10px;
+}
+
+/* AddEditContact */
+/* Business Layout */
+.ae_businessname_div {
+    clear: both;
+    float: left;
+    margin-top: 10px;
+}
+
+.ae_businessname_div span:first-child{
+    margin-right: 10px;
+}
+
+.ae_businessindustry_div {
+    clear: both;
+    float: left;
+}
+
+.ae_referedby_div {
+    clear: both;
+    float: left;
+    margin-top: 10px;
+}
+
+.ae_referedby_div span:first-child {
+    margin-right: 10px;
+}
+
+/* AddEditContact */
+/* Personal Layout */
+.ae_dear_div, .ae_firstname_div, .ae_lastname_div, .ae_middle_initial_div, .ae_prefered_name_div {
+    float: left;
+    margin-right: 10px;
+}
+
+.ae_dear_div span, .ae_firstname_div span, .ae_lastname_div span, .ae_middle_initial_div span, .ae_prefered_name_div span {
+    float: left;
+}
+
+.ae_dear_div span:first-child, .ae_firstname_div span:first-child, .ae_lastname_div span:first-child, .ae_middle_initial_div span:first-child, .ae_prefered_name_div span:first-child {
+    min-width: 100px;
+    margin-right: 5px;
+}
+
+.ae_middle_initial_div {
+    clear: both;
+}
+
+.ae_job_title_div {
+    float: left;
+    margin-right: 20px;
+}
+
+.ae_job_title_div span {
+    float: left;
+}
+
+.ae_job_title_div span:first-child {
+    width: 100px;
+}
+
+.ae_worksat_industry_div {
+    clear: both;
+    margin-top: 10px;
+}
+
+.ae_worksat_industry_div div {
+    float: left;
+    margin-right: 30px;
+}
+
+.ae_worksat_industry_div span {
+    float: left;
+}
+
+.ae_worksat_industry_div div span:first-child {
+    width: 100px;
+}
+
+.ae_worksat_industry_div div:nth-child(2) span:first-child {
+    width: 80px;
+}
+
+.ae_worksat_industry_div button {
+    margin-left: 10px;
+}
+
+.ae_email_birthdate_div, .ae_hometown_div, .ae_referredby_div {
+    clear: both;
+}
+
+.ae_birthday_div {
+    float: left;
+}
+
+.ae_referredby_div span:first-child{
+    float: left;
+    width: 100px;
+}
+
+.ae_marriage_info_div {
+    clear: both;
+    margin-top: 2px;
+}
+
+.ae_marital_status_div {
+    float: left;
+    margin-right: 20px;
+}
+
+.ae_spouses_name_div {
+    float: left;
+}
+
+.ae_childrens_names_div, .ae_contacts_interests_div {
+    clear: both;
+    float: left;
+    margin-top: 2px;
+}
+
+.ae_childrens_names_div span, .ae_contacts_interests_div span {
+    vertical-align: top;
+}
+
+.ae_hometown_div span:first-child {
+    float: left;
+    width: 100px;
+}
+
+.ae_switch_group_button_div {
+    position: absolute;
+    bottom: 50px;
+    width: 300px;
+    left: 50%;
+    margin-left: -150px;
+    text-align: center;
+}
+
+.ae_buttons_div {
+    position: absolute;
+    bottom: 5px;
+    width: 475px;
+    left: 50%;
+    margin-left: -237px;
+    text-align: center;
+}
+
+.ae_buttons_div button {
+    float: left;
+    margin-right: 10px;
+}
+
+/* Search */
+.search_results_main_div {
+    width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.search_header_row_div {
+    clear: both;
+    float: left;
+    margin-bottom: 5px;
+}
+
+.search_header_row_div span {
+    float: left;
+    width: 140px;
+    padding: 3px;
+    font-weight: bold;
+}
+
+.search_results_div {
+    clear: both;
+    float: left;
+    height: 325px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
+
+.search_result_row_div {
+    clear: both;
+    float: left;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.search_result_row_div span {
+    float: left;
+    width: 140px;
+    padding: 3px;
+}
+
+.search_goback_repeat_buttons_div {
+    clear: both;
+    width: 230px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.search_goback_repeat_buttons_div form button {
+    float: left;
+    margin-right: 20px;
+}
+
+.search_goback_repeat_buttons_div form:last-child button {
+    margin-right: 0px;
+}
+
+/* ViewContact */
+.id_type_encompassing_div {
+    width: 350px;
+}
+
+.contact_id_div {
+    float: left;
+    margin-bottom: 10px;
+}
+
+.contact_type_div {
+    float: left;
+    margin-left: 30px;
+}
+
+.vc_add_button_div {
+    float: left;
+}
+
+.vc_edit_button_div {
+    float: right;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.vc_name_div {
+    clear: both;
+    float: left;
+    margin-bottom:10px;
+}
+
+.vc_email_div {
+    float: left;
+    margin-left: 30px;
+}
+
+.vc_mailing_address_div {
+    clear: both;
+    float: left;
+    margin-bottom: 10px;
+}
+
+.vc_map_url_div {
+    float: left;
+    margin-left: 30px;
+    margin-top: 5px;
+    padding: 3px;
+}
+
+.vc_phone_numbers_div {
+    float: right;
+    margin-bottom: 10px;
+}
+
+.vc_phone_numbers_div .fieldpair_div {
+    clear: both;
+    float: left;
+    margin-right: 20px;
+    min-width: 175px;
+}
+
+.vc_phone_numbers_div .fieldname_span {
+    float: left;
+    margin-right: 10px;
+    min-width: 110px;
+}
+
+.vc_phone_numbers_div .fieldvalue_span {
+    float: left;
+    padding-right: 5px;
+    padding-left: 5px;
+    min-width: 100px;
+}
+
+.vc_work_info_div {
+    clear: both;
+    margin-bottom: 5px;
+}
+
+.vc_notes_div {
+    clear: both;
+    width: 100%;
+}
+
+.vc_notes_scroll_div {
+    height: 65px;
+    margin-right: 5px;
+    overflow-y: auto;
+}
+
+.vc_row div {
+    margin-bottom: 5px;
+}
+
+.vc_row div:nth-child(3n+4) {
+    clear: both;
+}
+
+.vc_fieldpair_div {
+    float: left;
+    margin-right: 30px;
+}
+
+.vc_fieldpair_div span:first-child {
+    margin-right: 15px;
+}
+
+.vc_fieldpair_div span:nth-child(2) {
+    border: 1px solid #123abc;
+    min-width: 50px;
+    padding-right: 3px;
+    padding-left: 3px;
+    display: inline-block;
+}
+
+.vc_website_div {
+    float: left;
+    margin-left: 20px;
+}
+
+.vc_industry_bl_div {
+    float: right;
+    margin-right: 20px;
+}
+
+.vc_industry_bl_div .title {
+    float: left;
+}
+
+.vc_industry_bl_div .industry {
+    float: left;
+    margin-left: 3px;
+    min-width: 100px;
+    padding-right: 3px;
+    padding-left: 3px;
+}
+
+.vc_nav_options_div {
+    position: absolute;
+    bottom: 5px;
+    width: 600px;
+    left: 50%;
+    margin-left: -300px;
+    text-align: center;
+}
+
+.vc_nav_goto_id_div {
+    float: right;
+    margin-bottom: 15px;
+}
+
+.vc_nav_buttons_div {
+    clear: both;
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.vc_nav_buttons_div form {
+    float: left;
+    margin-left: 10px;
+}
+
+.vc_search_form_div {
+    float: left;
+    margin-bottom: 15px;
+}
+
+.vc_search_form_div button, .vc_nav_goto_id_div button{
+    margin-left: 5px;
+}
+
+/** --- **/
+/* BEGIN CSS media queries */
+@media screen and (min-width: 801px) {
+
+    /* AddEdit Event */
+
+    .vc_nav_options_div {
+        width: 700px;
+        margin-left: -350px;
+        text-align: center;
+    }
+
+    .vc_nav_buttons_div {
+        width: 575px;
+    }
+}

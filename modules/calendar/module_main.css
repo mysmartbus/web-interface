@@ -1,0 +1,609 @@
+
+/***********/
+/* Generic */
+.page_title_div, .page_title_cell {
+    text-align: center;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+.title_cell {
+    text-align: center;
+}
+
+.addedit-selected {
+    background-color: #007f00 !important;
+}
+
+.hidden {
+    display: none;
+}
+
+.hidden_small_screen {
+    display: none;
+}
+
+.bordercollapse{
+    border-collapse: collapse;
+}
+
+.centered {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.datacell {
+    background-color: #3a3a3a;
+}
+
+.colormered-background {
+    background-color: #c50000;
+}
+
+.noborder {
+    border-width: 0px !important;
+}
+
+.tinytext {
+    /* Replaces <tt></tt> */
+    /* 12px */
+    font-size: 0.75em;
+}
+
+.toptext {
+    vertical-align: top;
+}
+
+.note {
+    font-size: 0.75em;
+}
+
+/**********/
+/* Colors */
+
+.today {
+    background-color: #C0362C; /* Dark Red or Maroon */
+}
+
+.today_hasevents {
+    background-color: #C0362C;
+}
+
+.today_noevents {
+    background-color: #FF8642;
+}
+
+.currentevent {
+    background-color: #C0362C;
+}
+
+.weekend {
+    background: #06C2F4; /* Light Blue */
+}
+
+.weekend_hasevents {
+    background-color: #3CD6E6;
+}
+
+.weekend_noevents {
+    background-color: #06C2F4;
+}
+
+.weekendpast_hasevents {
+    background-color: #007996;
+}
+
+.weekendpast_noevents {
+    background-color: #0097AC;
+}
+
+.hasevents_past {
+    background-color: #816C5B; /* Dark Gray */
+}
+
+.hasevents_future {
+    background-color: #F4DC85; /* Light Brown */
+}
+
+.no_events {
+    background-color: #E7E3D7;
+}
+
+/***********/
+/* AddEdit */
+
+.ae_event_name_div {
+    float: left;
+    margin-bottom: 5px;
+}
+
+.ae_event_name_div span {
+    float: left;
+}
+
+.ae_event_name_div span:first-child {
+    width: 120px;
+}
+
+.ae_description_div {
+    clear: both;
+    float: left;
+}
+
+.ae_description_div span {
+    float: left;
+}
+
+.ae_description_div span:first-child {
+    width: 120px;
+}
+
+.ae_location_div {
+    clear: both;
+    float: left;
+    margin-bottom: 8px;
+}
+
+.ae_location_div span {
+    float: left;
+}
+
+.ae_location_div span:first-child {
+    width: 120px;
+}
+
+.ae_location_div #locationname {
+    width: 130px;
+    padding-top: 3px;
+    overflow-x: hidden;
+}
+
+.ae_location_div span:last-child {
+    margin-left: 10px;
+    margin-top: 3px;
+}
+
+.ae_markpublic_div {
+    clear: both;
+    float: left;
+}
+
+.ae_markpublic_div span {
+    float: left;
+}
+
+.ae_markpublic_div span:first-child {
+    width: 120px;
+}
+
+.ae_dates_main_div {
+    clear: both;
+    float: left;
+    margin-top: 10px;
+}
+
+.ae_dates_header_div {
+    float: left;
+}
+
+.ae_dates_header_div span {
+    float: left;
+    width: 100px;
+}
+
+.ae_dates_form_status_div {
+    clear:both;
+    float:left;
+    margin-top:15px;
+    width:100%;
+}
+
+.ae_dates_times_table_div {
+    float: left;
+    width: 380px;
+    background-color: #123456;
+}
+
+.ae_dtt_list_table_div {
+    height: 175px;
+    width: 100%;
+    overflow-x: auto;
+    background-color: #012345;
+}
+
+.dttcol1 {
+    width: 60px;
+}
+
+.dttcol2 {
+    width: 110px;
+}
+
+.dttcol3 {
+    width: 110px;
+}
+
+.dttcol4 {
+    width: 75px;
+}
+
+.ae_form_status_red_div, .ae_form_status_green_div {
+    float: right;
+    width: 300px;
+    margin-right: 10px;
+    padding: 7px;
+}
+
+.ae_button_row_div {
+    clear: both;
+    float: left;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.ae_datetoadd_div {
+    float: left;
+}
+
+.ae_datetoadd_div button {
+    float: left;
+    margin-left: 6px;
+}
+
+.ae_datetoadd_div input[type=text] {
+    float: left;
+    margin-top: 4px;
+}
+
+.ae_save_cancel_buttons_div {
+    float: right;
+    margin-right: 5px;
+}
+
+.ae_save_cancel_buttons_div button {
+    float: left;
+    margin-right: 15px;
+}
+
+/**************/
+/* Month view */
+
+.calendar_grid_div {
+    float: right;
+    padding-right: 5px;
+}
+
+.goto_view_div {
+    float: left;
+    width: 150px;
+}
+
+.mv_month_name_cell {
+    width: 100px;
+    text-align: center;
+}
+
+.mv_grid {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+}
+
+.mv_mini_cal_title_div {
+    /* Intentionally empty */
+}
+
+.mv_pnlinks_div {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+}
+
+.mv_pnlinks_div span {
+    float: left;
+    margin-bottom: 4px;
+}
+
+.mv_pnlinks_div span:first-child {
+    margin-right: 10px;
+}
+
+.mv_pnlinks_div span:last-child {
+    margin-left: 10px;
+}
+
+.mv_pnlinks_mini_table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.daybutton {
+    width: 70px;
+    height: 70px;
+    font-weight: bold;
+    font-size: 1.25em;
+    text-align: center;
+    color: #000000;
+    margin: 0px;
+    padding: 0px;
+}
+
+.daybutton_mini {
+    width: 50px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 1.25em;
+    text-align: center;
+    color: #000000;
+    margin: 0px;
+    padding: 0px;
+}
+
+.dayname {
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Daily view */
+.dv_row_encompassing_div {
+    height: 200px;
+    width: 740px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dv_top_row_div, .dv_middle_row_div, .dv_bottom_row_div {
+    clear: both;
+}
+
+.dv_top_row_div .hrcell, .dv_middle_row_div .hrcell, .dv_bottom_row_div .hrcell {
+    float: left;
+    text-align: left;
+    vertical-align: top;
+    font-weight: bold;
+    height: 25px;
+    width: 86px;
+    padding-left: 4px;
+    border-left: 2px solid #000000;
+}
+
+.one_unit_div, .three_quarter_unit_div, .half_unit_div, .quarter_unit_div {
+    float: left;
+    height: 25px;
+    line-height: 25px; /* Centers the text vertically */
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin: 0px 2px 15px 0px;
+    cursor: pointer;
+}
+
+.one_unit_div {
+    width: 90px;
+}
+
+.three_quarter_unit_div {
+    width: 67px;
+}
+
+.half_unit_div {
+    width: 45px;
+}
+
+.quarter_unit_div {
+    width: 22px;
+}
+
+/* Weekly view */
+.wv_title_cell {
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.wv_column_width {
+    width: 85px
+}
+
+.wv_dayname {
+    text-align: center;
+    font-weight: bold;
+}
+
+.wv_daynum {
+    text-align: center;
+    font-weight: bold;
+}
+
+.wv_hrcell {
+    text-align: right;
+    margin: 0px 5px 0px 0px;
+    padding: 0px 5px 0px 0px;
+    border: 0px !important;
+    font-weight: bold;
+    width: 60px;
+}
+
+.wv_block {
+    width: 85px;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    font-size: 0.75em;
+    background-color: #E7E3D7;
+}
+
+.wv_encompassing_div {
+    margin-left: auto;
+    margin-right: auto;
+    width: 702px;
+}
+
+.wv_column_header_table_div {
+    /* Intentionally empty */
+}
+
+.wv_buttons_table_div {
+    height: 350px;
+    width: 700px;
+    overflow-y: auto;
+    border: 1px solid #000000;
+}
+
+.wv_nav_table {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px;
+}
+
+.wv_colorone_light {
+    background-color: #06C2F4; /* Light Blue */
+}
+
+.wv_colorone_dark {
+    background-color: #007996; /* Dark Blue */
+}
+
+.wv_colortwo_light {
+    background-color: #B1DDA1; /* Light Green */
+}
+
+.wv_colortwo_dark {
+    background-color: #668D3C; /* Dark Green */
+}
+
+.wv_colorthree_light {
+    background-color: #C3A7AC; /* Light Gray */
+}
+
+.wv_colorthree_dark {
+    background-color: #816C5B; /* Dark Gray */
+}
+
+.wv_colorfour_light {
+    background-color: #FF8642; /* Dark Orange */
+}
+
+.wv_colorfour_dark {
+    background-color: #C0362C; /* Dark Red or Maroon */
+}
+
+/* Used by the addview and editview functions */
+.ae_mini_cal_div {
+}
+
+.dtt_encompassing_div {
+    float: left;
+    width: 380px;
+    background-color: #123456;
+}
+
+.dtt_list_table_div {
+    height: 175px;
+    width: 100%;
+    overflow-x: auto;
+    background-color: #012345;
+}
+
+.dttcol1 {
+    width: 60px;
+}
+
+.dttcol2 {
+    width: 110px;
+}
+
+.dttcol3 {
+    width: 110px;
+}
+
+.dttcol4 {
+    width: 75px;
+}
+
+.rt_encompassing_div {
+    width: 380px;
+    background-color:#123456;
+}
+
+.reminders_list_table_div {
+    height: 300px;
+    width: 100%;
+    overflow-x: auto;
+    background-color: #012345;
+}
+
+.rtcol1 {
+    width: 70px;
+}
+
+.rtcol2 {
+    width: 70px;
+}
+
+.rtcol3 {
+    width: 110px;
+}
+
+.rtcol4 {
+    width: 110px;
+}
+
+/*************************/
+/* Miscellaneous/Generic */
+
+.cal_clearfix {
+    clear: both;
+}
+
+.monthweekviewbuttons_table {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+}
+
+.monthweekviewbuttons_table td {
+    padding-right: 8px;
+}
+
+.monthweekviewbuttons_table td:last-child {
+    padding-right: 0px;
+}
+
+/** --- **/
+/* BEGIN CSS media queries */
+@media screen and (min-width: 801px) {
+
+    /* AddEdit Event */
+    .ae_location_div #locationname {
+        width: 160px;
+    }
+
+    /* Month view */
+    .mv_month_name_cell {
+        width: 150px;
+    }
+
+    .daybutton {
+        width: 100px;
+        height: 100px;
+    }
+
+    .daybutton_mini {
+        width: 75px;
+        height: 75px;
+    }
+
+    /* Weekly view */
+    .wv_buttons_table_div {
+        height: 600px;
+    }
+
+    /* View Contact */
+    .ae_markpublic_div span:first-child {
+        width: 150px;
+    }
+
+    /* Miscellaneous/Generic */
+    .hidden_small_screen {
+        display: table-row;
+    }
+}

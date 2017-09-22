@@ -1,0 +1,40 @@
+.icon_only_div {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 33px;
+}
+
+.menu_white_bar {
+    width: 90%;
+    height: 5px;
+}
+
+.menu_clear_bar {
+    width: 90%;
+    height: 5px;
+}
+
+.special_button_div {
+    position: absolute;
+    bottom: 5px;
+    width: 600px;
+    left: 50%;
+    margin-left: -300px;
+    text-align: center;
+}
+
+.users_control_panel_icon_div {
+    width: 23px;
+    height: 23px;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* BEGIN CSS media queries */
+@media screen and (min-width: 1400px) {
+    .icon_only_div {
+        width: 26px;
+    }
+}

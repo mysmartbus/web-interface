@@ -1,0 +1,1 @@
+This directory should automatically be created the first time a file is uploaded by a module. It is included to make it easier for people browsing the source code to understand how the web interface works.

@@ -1,0 +1,146 @@
+HTML, BODY {
+    height: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+    font-size: 100%;
+    font-family: Tahoma, Geneva, sans-serif;
+}
+
+div,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,table,th,td,span{
+	margin: 0px;
+	padding: 0px;
+}
+
+button {
+    margin: 0px;
+    font-size: 1em;
+}
+
+form {
+    border: 0px;
+}
+
+.page_div {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+
+.page_content {
+    position: absolute;
+    top: 0px;
+    left: 38px;
+    bottom: 0px;
+    right: 0px;
+    margin-top: 5px;
+}
+
+.wordwrap { 
+   white-space: pre-wrap;      /* CSS3 */   
+   white-space: -moz-pre-wrap; /* Firefox */    
+   white-space: -pre-wrap;     /* Opera <7 */   
+   white-space: -o-pre-wrap;   /* Opera 7 */    
+   word-wrap: break-word;      /* IE */
+}
+
+.wordwrapoff { 
+   white-space: nowrap;
+}
+
+/* Font alignment */
+.centertext {
+    text-align: center;
+}
+
+.lefttext {
+    text-align: left;
+}
+
+.righttext {
+    text-align: right;
+}
+
+.justifytext {
+    text-align: justify;
+}
+
+.toptext {
+	display: table-cell;
+    vertical-align: top;
+}
+
+.middletext {
+	display: table-cell;
+    vertical-align: middle;
+}
+
+.bottomtext {
+	display: table-cell;
+    vertical-align: bottom;
+}
+
+.hidden {
+    display: none;
+}
+
+.centertext {
+    text-align: center;
+}
+
+.href_to_button {
+    margin: 10px;
+    padding: 8px;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.href_to_button_small {
+    margin: 5px;
+    padding: 4px;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.href_to_button_one_row {
+    margin: 10px;
+    padding: 8px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.href_to_button_small_one_row {
+    margin: 5px;
+    padding: 4px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.requiredinfogreenish {
+    color: #abc123;
+    font-size: 12px;
+}
+
+/* BEGIN CSS media queries */
+@media screen and (max-width: 801px) {
+    select {
+        font-size: 1em;
+        max-width: 300px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .page_content {
+        left: 30px;
+    }
+}

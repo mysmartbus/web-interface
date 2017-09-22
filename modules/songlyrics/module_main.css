@@ -1,0 +1,393 @@
+
+.clearfix {
+    clear: both;
+}
+
+.centered {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fullwidth {
+    width: 100%;
+}
+
+.tabslist_height_control_div {
+    height: 91%;
+}
+
+#tabslist .ui-tabs-panel {
+    overflow-y: scroll;
+    overflox-x: scroll;
+}
+
+.name_table_cell {
+    vertical-align: top;
+    padding-right: 10px;
+}
+
+.artist_link_div {
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 2px 4px 2px 4px;
+    cursor: pointer;
+}
+
+.page_title_div {
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.page_title_cell {
+    text-align: center;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+.button_group_div {
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.button_group_div div {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.button_group_div div:last-child {
+    margin-right: 0px;
+}
+
+.tinytext {
+    /* Replaces <tt></tt> */
+    /* 12px */
+    font-size: 0.75em;
+}
+
+/* Contains 1 fieldname_span and 1 fieldvalue_span */
+.fieldpair_div {
+    float: left;
+    margin-right: 20px;
+    min-width: 175px;
+}
+
+.fieldname_span {
+    float: left;
+    margin-right: 10px;
+    min-width: 110px;
+}
+
+.fieldvalue_span {
+    float: left;
+    padding-right: 5px;
+    padding-left: 5px;
+    min-width: 100px;
+}
+
+.fieldvalue_span a:link {
+    text-decoration: none;
+}
+
+.item_count_width {
+    min-width: 15px !important;
+}
+
+/* function ListArtist */
+.list_artists_button_row_div {
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.list_artists_button_row_div button {
+    margin-right: 10px;
+}
+
+.list_artists_search_form_div {
+    display: none;
+}
+
+/* function Addartist */
+.add_artist_centering_div {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.add_artist_field_pair_div {
+    margin-bottom: 20px;
+}
+
+.add_artist_field_pair_div div:first-child {
+    margin-bottom: 3px;
+}
+
+/* function AddAlbum() */
+.left_column_width {
+    width: 125px;
+}
+
+/* function OrphanCheckAlbums */
+.orphaned_albums_div {
+    height: 265px;
+    width: 639px;
+    overflow-y: auto;
+    border: 1px solid #a1b2c3;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* function ViewArtist */
+.artist_pn_links_div {
+    float: left;
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.artist_pn_links_div div {
+    float: left;
+    margin-right: 20px;
+}
+
+.artist_pn_links_div div:last-child {
+    margin-right: 0px;
+}
+
+.return_to_artist_list_div {
+    float: left;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.web_wiki_links_div {
+    float: left;
+    margin-top: 10px;
+}
+
+.web_wiki_links_div div {
+    float: left;
+    margin-right: 20px;
+}
+
+.bio_art_btn_wrapper_div {
+    position: absolute;
+    top: 60px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+.artist_bio_data_div {
+    height: 125px;
+    width: 595px;
+    margin-bottom: 15px;
+    overflow-y: auto;
+}
+
+.album_art_row_div {
+    height: 265px;
+    width: 639px;
+    overflow-y: auto;
+}
+
+.view_artist_button_row_div {
+    position: absolute;
+    top: 0px;
+    left: 640px;
+}
+
+.view_artist_button_row_div button {
+    margin-bottom: 25px;
+}
+
+/* function ViewAlbum() */
+.view_album_label_cell {
+    width: 130px;
+}
+
+.view_album_data_cell {
+    width: 170px;
+}
+
+.coverart_cell {
+    width: 200px;
+}
+
+/* function OrphanCheckAlbums */
+/* function ViewArtist */
+.coverart_div {
+    float:left;
+    text-align: center;
+    width: 200px;
+    height: 240px;
+    margin-right: 6px;
+    margin-bottom: 6px;
+}
+
+.coverart_div img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* function SearchForm() */
+.search_category_column_div {
+    float: left;
+    width: 135px;
+}
+
+.search_text_column_div {
+    float: left;
+    width: 165px;
+}
+
+/* function RunSearch() */
+.search_results_table {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+}
+
+.searchtablerow td{
+    border-width: 0px 0px 1px 0px;
+    border-style: solid;
+    border-color: <?php echo $colors['main_table_border']; ?>;
+    padding: 0px;
+    margin: 0px;
+}
+
+.search_result_header_cell {
+    font-weight: bold;
+    text-align: center;
+}
+
+.search_submit_button_div {
+    float: left;
+    margin-right: 20px;
+}
+
+/* function ViewSong */
+.coverart_viewsong_div {
+    width: 200px;
+    height: 200px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10px;
+}
+
+.coverart_viewsong_div img {
+    max-width: 100%;
+    height: auto;
+}
+
+.viewsong_leftcolumn_cell {
+    width: 115px;
+}
+
+.viewsong_rightcolumn_cell {
+    width: 170px;
+    height: 36px;
+}
+
+/* function AddSong */
+
+.showgroup_button_div {
+    clear: both;
+    position: relative;
+    top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* function ViewSong */
+/* function AddSong */
+.lyrics_cell {
+    vertical-align: top;
+}
+
+.lyrics_div {
+    min-width: 375px;
+    max-width: 400px;
+    height: 400px;
+    margin-left: 10px;
+    padding: 5px;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+/* function AddSong */
+/* function EditAlbum */
+.group_one_div {
+    float: left;
+    display: hidden;
+}
+
+.group_two_div {
+    float: left;
+    display: hidden;
+}
+
+/* function EditAlbum */
+.coverart_editalbum_div {
+    float:left;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    margin-top: 6px;
+    margin-right: 6px;
+}
+
+.coverart_editalbum_div img {
+    max-width: 100%;
+    height: auto;
+}
+
+/** --- **/
+/* BEGIN CSS media queries */
+@media screen and (min-width: 801px) {
+
+    .artist_pn_links_div {
+        margin-top: 0px;
+        margin-left: 10px;
+    }
+
+    .return_to_artist_list_div {
+        margin-top: 0px;
+    }
+
+    .web_wiki_links_div {
+        margin-top: 0px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+
+    .web_wiki_links_div div {
+        margin-right: 20px;
+    }
+
+    .album_art_row_div {
+        width: 100%;
+        height: 455px;
+    }
+
+    .view_artist_button_row_div {
+        position: relative;
+        top: 30px;
+        left: 0px;
+    }
+
+    .list_artists_search_button_div {
+        display: none;
+    }
+
+    .list_artists_search_form_div {
+        display: block;
+    }
+}
+

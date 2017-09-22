@@ -1,0 +1,21 @@
+
+.receipe_link_div {
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 2px 4px 2px 4px;
+    cursor: pointer;
+}
+
+.tabslist_height_control_div {
+    height: 91%;
+}
+
+#tabslist .ui-tabs-panel {
+    overflow-y: auto;
+    overflox-x: hidden;
+}
+
+.name_table_cell {
+    vertical-align: top;
+    padding-right: 10px;
+}

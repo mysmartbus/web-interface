@@ -1,0 +1,6 @@
+my-git-hooks-pre.sh
+my-git-hooks-post.sh
+
+# Make the /files folder show up on github
+files/**
+!/files/readme.txt
