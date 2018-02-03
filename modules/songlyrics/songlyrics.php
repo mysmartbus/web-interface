@@ -174,9 +174,9 @@ echo '<script>
             $innertable->new_cell('centertext');
             // Cancel button
             if ($artistid > 0) {
-                $form->add_button_generic('ACTON',get_lang('cancel'),'location.href="'.kgCreateLink('',array('ACTON' => 'viewartist', 'artistid' => $artistid, 'NO_TAG' => 'NO_TAG')).'";');
+                $form->add_button_generic('ACTON',get_lang('cancel'),'location.href=\''.kgCreateLink('',array('ACTON' => 'viewartist', 'artistid' => $artistid, 'NO_TAG' => 'NO_TAG')).'\';');
             } else {
-                $form->add_button_generic('ACTON',get_lang('cancel'),'location.href="'.kgCreateLink('',array('NO_TAG' => 'NO_TAG')).'";');
+                $form->add_button_generic('ACTON',get_lang('cancel'),'location.href=\''.kgCreateLink('',array('NO_TAG' => 'NO_TAG')).'\';');
             }
         $innertable->end_table();
     $table->blank_cell();
@@ -216,7 +216,7 @@ echo '<script>
             echo '<br />';
             $form->add_radio('backcoverradio',$filename,get_lang('BackCover'));
             echo '<br />';
-            $form->add_button_generic('submit',get_lang('Delete'),'location.href="'.kgCreateLink('',array('ACTON' => 'deletealbumart', 'sha' => $shahash, 'artistid' => $artistid, 'dowhat' => 'addalbum', 'NO_TAG' => 'NO_TAG')).'";');
+            $form->add_button_generic('submit',get_lang('Delete'),'location.href=\''.kgCreateLink('',array('ACTON' => 'deletealbumart', 'sha' => $shahash, 'artistid' => $artistid, 'dowhat' => 'addalbum', 'NO_TAG' => 'NO_TAG')).'\';');
             echo '<br />';
 
             if ($cnt >= $maxcols) {
@@ -326,7 +326,7 @@ echo '<script type="text/javascript">
     echo '<div>';
     $form->add_button_submit();
     echo '</div><div>';
-    $form->add_button_generic('ACTON',get_lang('cancel'),'location.href="'.kgCreateLink('',array('NO_TAG' => 'NO_TAG')).'";');
+    $form->add_button_generic('ACTON',get_lang('cancel'),'location.href=\''.kgCreateLink('',array('NO_TAG' => 'NO_TAG')).'\';');
     echo "</div>\n</div><!-- END button_group_div -->";
 
     echo '</div>';
@@ -367,16 +367,14 @@ function AddEditSong($addsong=true) {
     /**
      * Add a new song to the database.
      * or
-     * 
-     * or
      * Edit an existing song.
      * 
      *
      * Added: 2017-06-27
-     * Modified: 2017-07-01
+     * Modified: 2017-12-16
      *
      * @param Optional boolean $addsong If true, display add song form
-     *                                  if false, display edit song form
+     *                                  If false, display edit song form
      *
      * @return Nothing
     **/
@@ -550,14 +548,14 @@ function AddEditSong($addsong=true) {
 
         $form->add_hidden(array(
             'ACTON' => 'savenewsong',
-            'addvia' => $addvia
+            'addvia' => $addvia,
+            'artistid' => $artistid
         ));
 
         if ($addvia == 'albumpage') {
             // function called from an album page
             $form->add_hidden(array(
-                'albumid' => $albumid,
-                'artistid' => $artistid
+                'albumid' => $albumid
             ));
         }
 
@@ -888,7 +886,7 @@ echo '
 */
 
 }
-// END function AddSong()
+// END function AddEditSong()
 /////
 
 function AssignAlbum() {
@@ -1469,6 +1467,7 @@ function EditAlbum() {
 
     // Are they allowed to edit album info?
     if ($KG_SECURITY->haspermission('edit') === false) {
+        // Permission denied
         $form->add_hidden(array(
             'ACTON' => 'viewalbum',
             'albumid' => $albumid
@@ -1647,7 +1646,7 @@ echo "\n".'    });
 
             // Cancel button
             $innertable->new_cell();
-            $form->add_button_generic('ACTON',get_lang('cancel'),'location.href="'.kgCreateLink('',array('ACTON' => 'viewalbum', 'albumid' => $albumid, 'NO_TAG' => 'NO_TAG')).'";');
+            $form->add_button_generic('ACTON',get_lang('cancel'),'location.href=\''.kgCreateLink('',array('ACTON' => 'viewalbum', 'albumid' => $albumid, 'NO_TAG' => 'NO_TAG')).'\';');
 
             // Change album art button
             $innertable->new_cell();
@@ -1750,7 +1749,7 @@ echo "\n".'    });
 
             // Cancel button
             $innertable->new_cell();
-            $form->add_button_generic('ACTON',get_lang('cancel'),'location.href="'.kgCreateLink('',array('ACTON' => 'viewalbum', 'albumid' => $albumid, 'NO_TAG' => 'NO_TAG')).'";');
+            $form->add_button_generic('ACTON',get_lang('cancel'),'location.href=\''.kgCreateLink('',array('ACTON' => 'viewalbum', 'albumid' => $albumid, 'NO_TAG' => 'NO_TAG')).'\';');
 
             // Edit details button
             $innertable->new_cell();
@@ -2675,7 +2674,9 @@ function SaveChangesAlbum() {
 
     $albumid = $valid->get_value_numeric('albumid', 0);
 
-    if ($KG_SECURITY->hasPermission('edit') === false) {
+    // Are they allowed to edit album info?
+    if ($KG_SECURITY->haspermission('edit') === false) {
+        // Permission denied
         $form->add_hidden(array(
             'ACTON' => 'editalbum',
             'albumid' => $albumid
@@ -2708,7 +2709,10 @@ function SaveChangesAlbum() {
     $albumupdatequery['ReleaseDate'] = $valid->get_value('releasedate');
 
     // Wikipedia article
+    // Research PHP regular expressions and see if the str_replace can be merged in to preg_replace
     $albumupdatequery['Wikipedia'] = $valid->get_value('wikipediaarticle');
+    $albumupdatequery['Wikipedia'] = preg_replace('#^https?://#', '', $albumupdatequery['Wikipedia']);
+    $albumupdatequery['Wikipedia'] = str_replace('en.wikipedia.com/wiki/', '', $albumupdatequery['Wikipedia']);
 
     // Album name
     $albumupdatequery['Name'] = $valid->get_value('albumname');
@@ -3132,6 +3136,9 @@ function SaveNewSong() {
     // Get artist data to insert into the database
     $artistdata = getArtistData();
 
+    // If the user does not have the 'edit' permission for this module,
+    // return them to the 'Add Song' form. But if they don't have the 'edit'
+    // permission, how did they get to the 'Add Song' form?
     if ($KG_SECURITY->hasPermission('edit') === false) {
         $valid->setValues($songdata);
         $valid->setValues($artistdata);
@@ -3196,7 +3203,7 @@ function SaveNewSong() {
 
     /////
     // Add minimal album data if needed
-    if (($newalbumchkbox == 1) && (!$valid->is_error())) {
+    if (($newalbumchkbox == 1) && (!$valid->hasErrors())) {
         // Add a new album
 
         if ($valid->get_value('newalbumtxtbox') == '') {
@@ -3311,7 +3318,7 @@ function SearchForm() {
     echo '</div><div class="search_submit_button_div">';
     $form->add_button_submit(get_lang('search'));
     echo '</div>';
-    $form->add_button_generic('ACTON',get_lang('cancel'),'location.href="'.kgCreateLink('',array('NO_TAG' => 'NO_TAG')).'";');
+    $form->add_button_generic('ACTON',get_lang('cancel'),'location.href=\''.kgCreateLink('',array('NO_TAG' => 'NO_TAG')).'\';');
     $form->end_form();
 
     ?>
@@ -3395,7 +3402,7 @@ function ViewAlbum() {
     // Display cover art if available
     $table->set_rowspan(8);
     $table->new_cell('coverart_cell');
-    
+
     // Front coverart
     // Not (echo)ing $msg since we don't need it
     $msg = displayCoverArt($albumdata['CoverArtFront']);
@@ -3432,7 +3439,7 @@ function ViewAlbum() {
     if ($albumdata['Wikipedia'] != '') {
         // Add link to Wikipedia Article
         $table->new_cell();
-        echo '<a href="'.$albumdata['Wikipedia'].'" target="_blank">'.get_lang('wikipediaarticle').'</a>';
+        echo '<a href="https://'.$userinfo['Language'].'.wikipedia.com/wiki/'.$albumdata['Wikipedia'].'" target="_blank">'.get_lang('wikipediaarticle').'</a>';
     } else {
         $table->blank_cell();
     }
@@ -3559,7 +3566,7 @@ function ViewArtist() {
      * @return None
     **/
 
-    global $dbc, $valid, $KG_SECURITY;
+    global $dbc, $valid, $KG_SECURITY, $userinfo;
 
     $valid->displayErrors();
 
@@ -3690,7 +3697,7 @@ function ViewArtist() {
     }
     if ($artistdata['Wikipedia'] != '') {
         // Add link to Wikipedia Article
-        echo '<div><a href="'.$artistdata['Wikipedia'].'" target="_blank">'.get_lang('wikipediaarticle').'</a></div>';
+        echo '<a href="https://'.$userinfo['Language'].'.wikipedia.com/wiki/'.$artistdata['Wikipedia'].'" target="_blank">'.get_lang('wikipediaarticle').'</a>';
     }
     echo '</div>';
 
@@ -4125,7 +4132,6 @@ if ($dbc->isConnectedDB() === true) {
     } elseif ($ACTON == 'addsong') {
         // Add a new song to the database
 
-        //AddSong();
         AddEditSong(true);
 
     } elseif ($ACTON == 'assignalbum') {

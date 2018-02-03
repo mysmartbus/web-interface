@@ -106,6 +106,7 @@ $moduledata = array(
             'runtime' => 'Run Time',
             'save' => 'Save',
             'savechanges' => 'Save Changes',
+            'search' => 'Search',
             'searchfor' => 'Search for',
             'searchform' => 'Search Form',
             'servernouploadpermission' => 'The webserver does not have permission to upload cover art.',
